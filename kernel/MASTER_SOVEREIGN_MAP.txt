@@ -1,1 +1,2 @@
 MODULE: living_value_identity.aur | HASH: 2f55a5ff3db05dfb
+IDENTITY_SEAL: ED25519_1772368005_INDIE_FOUNDER
