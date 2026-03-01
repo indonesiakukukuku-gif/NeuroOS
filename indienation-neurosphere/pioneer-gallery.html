@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer NFT Gallery | NeuroSphere</title>
+    <style>
+        body { 
+            background: #000; color: #00ff96; font-family: 'Courier New', monospace; 
+            margin: 0; display: flex; flex-direction: column; align-items: center; padding: 40px 20px;
+        }
+        .gallery-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px; width: 100%; max-width: 1000px; margin-top: 40px;
+        }
+        .nft-card-small {
+            border: 1px solid #ffd700; border-radius: 15px; padding: 15px;
+            text-align: center; background: #0a0a0a; transition: 0.3s; cursor: pointer;
+        }
+        .nft-card-small:hover { transform: scale(1.05); box-shadow: 0 0 15px #ffd700; }
+        .pioneer-id { font-size: 1.2em; font-weight: bold; color: #ffd700; margin-bottom: 10px; }
+        .seal-mini { width: 80px; height: 80px; margin: 10px auto; filter: drop-shadow(0 0 5px #ffd700); }
+        .status-tag { font-size: 0.6em; background: #ffd700; color: #000; padding: 2px 8px; border-radius: 5px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <h1 style="color: #ffd700;">PIONEER GENERATION</h1>
+    <p>The First 10 Citizens of the Kindness Estafet</p>
+
+    <div class="gallery-grid" id="gallery">
+        </div>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        for(let i=11; i<=20; i++) {
+            const card = document.createElement('div');
+            card.className = 'nft-card-small';
+            card.innerHTML = `
+                <div class="status-tag">Locked Pioneer</div>
+                <div class="pioneer-id">IID-0${i}</div>
+                <img src="https://i.ibb.co/vzYm0Nn/seal-placeholder.png" class="seal-mini" alt="Seal">
+                <div style="font-size: 0.7em; color: #888; margin-top: 10px;">PURWANTORO & ASSOCIATES</div>
+                <div style="font-size: 0.5em; color: #00ff96; margin-top: 5px;">VALUE: €100K</div>
+            `;
+            card.onclick = () => location.href = 'wallet.html';
+            gallery.appendChild(card);
+        }
+    </script>
+</body>
+</html>

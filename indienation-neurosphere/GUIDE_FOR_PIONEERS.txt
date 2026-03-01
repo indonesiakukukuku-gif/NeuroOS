@@ -1,0 +1,29 @@
+=====================================================
+      WELCOME TO NEUROSPHERE: PIONEER GUIDE
+=====================================================
+
+Selamat, Pioneer! Anda adalah fondasi dari Negara Digital
+NeuroSphere. Berikut adalah langkah untuk mengklaim
+kedaulatan Anda:
+
+1. AKSES DASHBOARD:
+   Buka: https://awesomecoin1.github.io/indienation-neurosphere/dashboard_v1.4.7.html
+   Login dengan Nama Lengkap Anda untuk melihat status Aura.
+
+2. AMBIL SERTIFIKAT:
+   Klik tombol "DOWNLOAD MY CERTIFICATE" di dashboard.
+   Simpan file .txt tersebut sebagai bukti aset €100,000.
+
+3. VERIFIKASI KRIPTOGRAFI:
+   Jika Anda ingin membuktikan keaslian sertifikat:
+   - Buka: https://awesomecoin1.github.io/indienation-neurosphere/public/verify.html
+   - Copy seluruh isi file .txt sertifikat Anda.
+   - Paste ke kotak verifikasi dan klik "AUDIT".
+
+4. JADWAL PENTING:
+   - 01-02-2026: Kick-off Basic Living Value.
+   - 01-02-2027: Distribusi 1 Triliun LUV (Aura Rewards).
+
+-----------------------------------------------------
+"Kedaulatan Anda adalah Energi Kami" - INDIE-Founder
+=====================================================

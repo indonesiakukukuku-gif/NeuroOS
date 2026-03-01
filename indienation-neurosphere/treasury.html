@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Treasury | NeuroSphere</title>
+    <style>
+        body { 
+            background: #000; color: #ffd700; font-family: 'Courier New', monospace; 
+            padding: 30px; display: flex; flex-direction: column; align-items: center;
+        }
+        .treasury-vault {
+            border: 2px double #ffd700; padding: 40px; border-radius: 50%;
+            width: 300px; height: 300px; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; background: radial-gradient(circle, #1a1a00 0%, #000 100%);
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.1);
+        }
+        .total-reserve { font-size: 2em; font-weight: bold; color: #fff; margin: 10px 0; }
+        .ledger-table { width: 100%; max-width: 600px; margin-top: 40px; border-collapse: collapse; font-size: 0.7em; }
+        .ledger-table th, .ledger-table td { border: 1px solid #333; padding: 12px; text-align: left; }
+        .status-locked { color: #00ff96; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>NEUROSPHERE TREASURY</h1>
+    <div class="treasury-vault">
+        <div style="font-size: 0.7em;">TOTAL ANCHORED RESERVES</div>
+        <div class="total-reserve">€2,100,000</div>
+        <div style="font-size: 0.6em; color: #888;">BACKED BY SWF-ENPE</div>
+    </div>
+
+    <table class="ledger-table">
+        <thead>
+            <tr>
+                <th>SERIES</th>
+                <th>IID RANGE</th>
+                <th>ALLOCATION</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PIONEER</td>
+                <td>011 - 020</td>
+                <td>€1,000,000</td>
+                <td class="status-locked">LOCKED</td>
+            </tr>
+            <tr>
+                <td>INTERNATIONAL</td>
+                <td>021 - 021 (CURRENT)</td>
+                <td>€1,100,000</td>
+                <td class="status-locked">LOCKED</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="founder-ops.html" style="margin-top: 30px; color: #444; text-decoration: none; font-size: 0.8em;">← RETURN TO COMMAND</a>
+</body>
+</html>

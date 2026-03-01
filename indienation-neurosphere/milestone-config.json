@@ -1,0 +1,8 @@
+{
+  "milestone_triggers": [
+    {"target": 100, "label": "Centurion Phase", "action": "Unlock Bronze Pioneer Badges"},
+    {"target": 1000, "label": "Millennium Phase", "action": "Activate Community Pool A"},
+    {"target": 10000, "label": "Legion Phase", "action": "Global SWF Audit Trigger"}
+  ],
+  "notification_channel": "Founder-Ops-Terminal"
+}

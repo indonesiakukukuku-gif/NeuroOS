@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindness Ledger | NeuroSphere</title>
+    <style>
+        body { 
+            background: #050505; color: #00ff96; font-family: 'Courier New', monospace; 
+            display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh; margin: 0; padding: 20px;
+        }
+        .ledger-card {
+            border: 1px solid #00ff96; padding: 30px; border-radius: 20px;
+            width: 100%; max-width: 450px; background: #000;
+            box-shadow: 0 0 20px rgba(0, 255, 150, 0.1);
+        }
+        textarea {
+            width: 100%; height: 120px; background: #111; border: 1px solid #333;
+            color: #fff; padding: 15px; border-radius: 10px; margin: 20px 0;
+            font-family: inherit; resize: none;
+        }
+        .btn-submit {
+            background: #00ff96; color: #000; border: none; padding: 15px;
+            width: 100%; font-weight: bold; cursor: pointer; border-radius: 10px;
+        }
+        .aura-preview { font-size: 0.6em; color: #ffd700; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="ledger-card">
+        <h2 style="color: #ffd700; margin: 0;">KINDNESS LEDGER</h2>
+        <p style="font-size: 0.7em; color: #888;">DAILY ESTAFET SUBMISSION</p>
+        
+        <div class="aura-preview">CURRENT AURA POTENTIAL: 0-10 LUV/DAY</div>
+        
+        <textarea id="act" placeholder="Describe your act of kindness today..."></textarea>
+        
+        <button class="btn-submit" onclick="submitAct()">SUBMIT TO AI-GUARD</button>
+        
+        <p style="font-size: 0.5em; color: #444; margin-top: 20px;">
+            "Karya yang tidak intelektual itu 'Keys Of Kindness Estafet'. 
+            Karya hak intelektual itu." — NeuroSphere Doctrine.
+        </p>
+        
+        <a href="wallet.html" style="display:block; margin-top:15px; color:#555; font-size:0.6em; text-decoration:none;">← BACK TO WALLET</a>
+    </div>
+
+    <script>
+        function submitAct() {
+            const act = document.getElementById('act').value;
+            if(act.length < 10) {
+                alert("Please provide more detail for the AI-Guard to verify your Aura.");
+                return;
+            }
+            alert("ESTAFET RECORDED\nAI-Guard is calculating your daily LUV reward...");
+            window.location.href = 'wallet.html';
+        }
+    </script>
+</body>
+</html>

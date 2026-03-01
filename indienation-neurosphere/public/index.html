@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NEUROSPHERE - COMMAND CENTER</title>
+    <style>
+        body { background: #000; color: #0f0; font-family: 'Courier New', monospace; padding: 20px; text-transform: uppercase; }
+        .box { border: 2px solid #0f0; padding: 20px; margin-bottom: 20px; box-shadow: 0 0 10px #0f0; }
+        .critical { color: #f00; border-color: #f00; box-shadow: 0 0 15px #f00; animation: blink 1s infinite; }
+        .stat-value { color: #0af; font-weight: bold; }
+        @keyframes blink { 50% { opacity: 0.3; } }
+        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0f0; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LX-4-ALPHA-01 // SOVEREIGN HUB</h1>
+        <div id="status-badge" style="background:#0f0; color:#000; padding:5px 10px; font-weight:bold;">NOMINAL</div>
+    </div>
+
+    <div class="box">
+        <h3>FOUNDER IDENTITY</h3>
+        ID: <span class="stat-value">INDIE-Founder (ENT-UT27TL)</span><br>
+        TRUST: <span class="stat-value">94.2%</span> | TIER: <span class="stat-value">Sovereign</span>
+    </div>
+
+    <div class="box" id="security-box">
+        <h3>SECURITY STATUS</h3>
+        ANTI-REPLAY: <span class="stat-value">ACTIVE</span><br>
+        BLACKCHAIN: <span class="stat-value">ENFORCED</span><br>
+        VIOLATIONS: <span id="violation-count" class="stat-value">0 / 3</span>
+    </div>
+
+    <div class="box">
+        <h3>ECONOMY (TM CORE)</h3>
+        STABLE (IND-EUR): <span class="stat-value">€100,000</span><br>
+        GIFT (LUV): <span class="stat-value">1,000,000 Aura</span><br>
+        SOCIAL TAX: <span style="color:red;">15.00%</span>
+    </div>
+
+    <p id="footer">"Security is not a product, it's a state of mind."</p>
+
+    <script>
+        // Simulasi sinkronisasi (Di Phase 3 akan menggunakan WebSocket/API)
+        console.log("NeuroSphere Dashboard Initialized.");
+    </script>
+</body>
+</html>

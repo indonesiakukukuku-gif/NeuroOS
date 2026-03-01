@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroSphere Explorer | Audit Publik</title>
+    <style>
+        :root { --primary: #00bcd4; --bg: #0a0a0a; --text: #e0e0e0; --bound: #4caf50; --unbound: #444; }
+        body { font-family: sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .stat-card { background: #1a1a1a; padding: 15px; border-radius: 10px; text-align: center; border: 1px solid #333; }
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
+        .vault-section { background: #1a1a1a; padding: 20px; border-radius: 15px; border: 1px solid #333; margin-bottom: 20px; }
+        .slot-grid { display: grid; grid-template-columns: repeat(9, 1fr); gap: 5px; }
+        .slot { height: 35px; background: var(--unbound); display: flex; align-items: center; justify-content: center; border-radius: 4px; font-weight: bold; color: #222; }
+        .slot.bound { background: var(--bound); color: white; box-shadow: 0 0 10px var(--bound); }
+        h1, h3 { color: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Transparency Explorer</h1>
+        <div class="stats-grid">
+            <div class="stat-card"><h2>5/36</h2><p>Slots Bound</p></div>
+            <div class="stat-card"><h2>€4.0M</h2><p>Total Asset</p></div>
+            <div class="stat-card"><h2>Active</h2><p>Status</p></div>
+        </div>
+        <div class="vault-section">
+            <h3>NTT_VAULT (4/9)</h3>
+            <div class="slot-grid"><div class="slot bound">01</div><div class="slot bound">02</div><div class="slot bound">03</div><div class="slot bound">04</div><div class="slot">05</div><div class="slot">06</div><div class="slot">07</div><div class="slot">08</div><div class="slot">09</div></div>
+        </div>
+        <div class="vault-section">
+            <h3>ROYAL_SINERGI (1/9)</h3>
+            <div class="slot-grid"><div class="slot bound">10</div><div class="slot">11</div><div class="slot">12</div><div class="slot">13</div><div class="slot">14</div><div class="slot">15</div><div class="slot">16</div><div class="slot">17</div><div class="slot">18</div></div>
+        </div>
+        <p style="text-align: center; font-size: 0.8rem; color: #555;">NeuroSphere SSOT Verified | Founder: INDIE-Founder</p>
+    </div>
+</body>
+</html>

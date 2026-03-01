@@ -1,0 +1,22 @@
+// Auralang V1.0 - NeuroSphere Shifting Protocol
+// Author: INDIE-Founder
+// Purpose: Mapping Registered Identities to Sequential Master IID
+
+DEFINE BATCH_SHIFT "15_TO_20" {
+    IID-015: { HOLDER: "Miftahudin", STATUS: "ANCHORED", VALUE: "€100K" },
+    IID-016: { HOLDER: "Kastim", STATUS: "ANCHORED", VALUE: "€100K" },
+    IID-017: { HOLDER: "Meiriska", STATUS: "ANCHORED", VALUE: "€100K" },
+    IID-018: { HOLDER: "Rasheed Abiodun O. Gbaiye", STATUS: "ANCHORED", VALUE: "€100K" },
+    IID-019: { HOLDER: "Lugard Jumbo", STATUS: "ANCHORED", VALUE: "€100K" },
+    IID-020: { HOLDER: "Heri Heryanto", STATUS: "ANCHORED", VALUE: "€100K" }
+}
+
+INTERPRET ALLOCATION_RULE {
+    FOR EACH PIONEER IN BATCH_SHIFT {
+        ASSIGN LUV: 1,000,000; // Taken from Founder's Allocation
+        ASSIGN STABLE: "IND-EUR"; 
+        LOCK_DURATION: 730_DAYS; // Locked for 2 years as agreed
+    }
+}
+
+VALIDATE IDENTITY "INDIE-Founder" { ACCESS: "SOVEREIGN_OVERRIDE" }

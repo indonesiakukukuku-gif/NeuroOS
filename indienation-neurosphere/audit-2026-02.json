@@ -1,0 +1,12 @@
+{
+  "transaction_id": "OPS-202602-001",
+  "timestamp": "2026-02-22T11:15:00Z",
+  "founder": "INDIE-Founder",
+  "source_asset": "27.000 ENPE",
+  "target_asset": "0.5 BNB",
+  "purpose": "Monthly Cloud/Firebase Subscription",
+  "gateway": "PancakeSwap via AuraLiquidityBridge",
+  "equivalent_value": "€270.00",
+  "status": "RECORDED",
+  "verified_by": "AI-Guard"
+}

@@ -1,0 +1,20 @@
+// Auralang V1.0 - Identity Encryption
+// Pioneer IID-012 Metadata Anchor
+
+DEFINE IDENTITY "IID-012" {
+    HOLDER: "PENDING_ALLOCATION",
+    STATUS: "SOVEREIGN_PIONEER",
+    VALUE_ASSETS: {
+        ENPE: "ALLOCATED",
+        LUV_REWARD: "1,000,000_LUV", // 1% from Founder's Allocation
+        STABLE_ANCHOR: "€100,000_IND-EUR"
+    },
+    LOCK_PROTOCOL: {
+        START_DATE: "2026-02-19",
+        RELEASE_DATE: "2028-02-19",
+        STATUS: "LOCKED_2Y"
+    }
+}
+
+VALIDATE_AUTHORITY "INDIE-Founder";
+GENERATE_QR_HASH "NS-IID012-777-999";

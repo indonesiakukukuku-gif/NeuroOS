@@ -1,0 +1,17 @@
+{
+  "tx_hash": "0x1001_DXB_LEBANON_ISLAND_001",
+  "source_identity": "00000009",
+  "brand_entity": "1001NDONESIA Properties",
+  "founder_identity": "INDIE-Founder",
+  "amount_ind_eur": 23200000, 
+  "metadata": {
+    "project": "Lebanon Island Acquisition",
+    "location": "Dubai World",
+    "buyer": "INDIE-Founder",
+    "land_area_sqft": 419161.31,
+    "offer_aed": 91812500,
+    "email_contact": "1001ndonesiaproperties2@gmail.com"
+  },
+  "status": "INTENT_TO_BUY_VALIDATED",
+  "timestamp": "2026-02-20"
+}

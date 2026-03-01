@@ -1,0 +1,42 @@
+============================================================
+NEUROSPHERE: LIVING VALUE IDENTITY - EXECUTIVE MANIFEST
+============================================================
+FOUNDER: INDIE-Founder
+DATE: 2026-02-21
+SERIES: International (IID-021 to 10B)
+GOVERNANCE: AI-Guard (Transition to Autonomy: Year 3)
+
+------------------------------------------------------------
+1. CORE INFRASTRUCTURE
+------------------------------------------------------------
+Main Portal:    https://indienation-tm.web.app
+Compiler/Int:   Auralang (AuraRewards Protocol v1.2)
+Data Source:    Firebase Hosting / Termux (100M Limit)
+Anchor Value:   €100,000.00 per Citizen
+Tokenomics:     LUV (100T), ENPE (100T), IND-EUR (Unlimited)
+
+------------------------------------------------------------
+2. PRIVATE COMMAND LINKS (Access Key: INDIE-2026)
+------------------------------------------------------------
+Command Center:  /founder-ops.html
+Treasury Vault:  /treasury.html
+Appeal Inbox:    /appeal-inbox.html
+Stress Test:     /stress-test.html
+Citizen Map:     /map.html
+
+------------------------------------------------------------
+3. TERMUX TERMINAL COMMANDS
+------------------------------------------------------------
+Monitor Appeals:  ./watch-appeals.sh
+Emergency Halt:   ./omega-lockdown.sh
+System Recovery:  ./alpha-recovery.sh
+Logic Edit:       nano aura-rewards.aura
+
+------------------------------------------------------------
+4. LOCK-UP PROTOCOL
+------------------------------------------------------------
+Founder Allocation: 20% (Locked 3 Years)
+Citizen LUV:        1% for 1M / 55% Total (Locked 2 Years)
+Disaster Pool:      15% (Liquid/Open)
+Operational:        10% (Liquid/Open)
+============================================================

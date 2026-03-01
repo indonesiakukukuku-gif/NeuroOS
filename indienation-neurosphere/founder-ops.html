@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Founder Ops | NeuroSphere Command</title>
+    <style>
+        body { 
+            background: #020202; color: #00ff96; font-family: 'Courier New', monospace; 
+            margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center;
+        }
+        .dashboard-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; width: 100%; max-width: 1200px; margin-top: 30px;
+        }
+        .metric-card {
+            border: 1px solid #333; padding: 20px; border-radius: 15px;
+            background: #050505; position: relative; overflow: hidden;
+        }
+        .metric-card::before {
+            content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff96, transparent);
+        }
+        .value { font-size: 1.8em; font-weight: bold; color: #fff; margin: 10px 0; }
+        .label { font-size: 0.7em; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .status-pulse { display: inline-block; width: 10px; height: 10px; background: #00ff96; border-radius: 50%; margin-right: 5px; box-shadow: 0 0 10px #00ff96; }
+    </style>
+</head>
+<body>
+    <h1 style="color: #ffd700; margin-top: 40px;">COMMAND CENTER: INDIE-FOUNDER</h1>
+    <div style="font-size: 0.8em;"><span class="status-pulse"></span> AI-GUARD STATUS: OPTIMAL (STABILITY PHASE 1)</div>
+
+    <div class="dashboard-grid">
+        <div class="metric-card">
+            <div class="label">Total IID Activations</div>
+            <div class="value" id="total-iid">21</div>
+            <div style="font-size: 0.6em; color: #00ff96;">+4.2% International Growth</div>
+        </div>
+        <div class="metric-card">
+            <div class="label">SWF Allocation (ENPE)</div>
+            <div class="value">80.00T</div>
+            <div style="font-size: 0.6em; color: #888;">Locked: 80% Sovereign Wealth Fund</div>
+        </div>
+        <div class="metric-card">
+            <div class="label">LUV Supply (Social Layer)</div>
+            <div class="value">100.00T</div>
+            <div style="font-size: 0.6em; color: #888;">55% Locked for 2 Years</div>
+        </div>
+        <div class="metric-card">
+            <div class="label">Anchor Value Liability</div>
+            <div class="value">€2.1M</div>
+            <div style="font-size: 0.6em; color: #ffd700;">Backing 21 Sovereign Citizens</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px; width: 100%; max-width: 1200px;">
+        <h3>System Logs (Auralang Interpreter)</h3>
+        <pre style="background: #111; padding: 20px; border-radius: 10px; font-size: 0.7em; color: #555; overflow-x: auto;">
+[2026-02-21 17:50] AI-Guard: Monitoring IID-011 through IID-021.
+[2026-02-21 17:51] Protocol: LUV Aura accumulation started for International Series.
+[2026-02-21 17:52] Security: Biometric Trust for Inheritance validated globally.
+[2026-02-21 17:53] Alert: Transition to AI autonomy scheduled for Year 3.
+        </pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.git/
+.firebase/
+node_modules/
+*.log
+certificates/backup/
+private_founder.pem

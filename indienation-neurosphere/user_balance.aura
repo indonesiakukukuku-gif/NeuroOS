@@ -1,0 +1,24 @@
+// Logika pemisahan saldo di Database - NeuroSphere Ecosystem
+// Konfigurasi: IND-EUR Living Value Relay (Updated with Day 365 Logic)
+
+Record UserBalance {
+    liquid_relay: 1270,      // Total yang sudah diklaim (Contoh: Hari ke-2)
+    anchor_fixed: 100000,   // Value Identity (Tetap/Locked)
+    current_day: 2,         // Penanda hari berjalan (Counter 1 s/d 365)
+    
+    // Logika Nilai Harian:
+    // If current_day == 1 then 1000
+    // If current_day > 1 and < 365 then 270
+    // If current_day == 365 then 990
+    
+    next_claim_amount: 270,  // Akan berubah jadi 990 saat current_day mencapai 364
+    
+    is_cycle_completed: false, // Menjadi true setelah hari ke-365 diklaim
+    aura_status: "Neutral", 
+    qr_metadata_hash: "ENC-NS-HASH-001" 
+}
+
+// Aturan AI Guard:
+// 1. Setelah klaim hari ke-365 (€990), siklus relay pertama selesai.
+// 2. Total akumulasi Liquid Relay selama 1 tahun: €1.000 + (€270 * 363) + €990.
+// 3. Anchor Value €100.000 TIDAK BOLEH tersentuh oleh logika klaim harian.

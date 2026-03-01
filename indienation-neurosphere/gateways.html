@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Gateways & Banks</title>
+    <style>
+        body { background: #000; color: #00ff96; font-family: 'Courier New', monospace; padding: 20px; text-align: center; }
+        .grid-container { max-width: 500px; margin: auto; border: 1px solid #333; padding: 20px; border-radius: 15px; }
+        .section-label { font-size: 0.8em; color: #ffd700; margin: 20px 0 10px; text-transform: uppercase; border-bottom: 1px solid #222; }
+        .btn-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .bank-btn { background: #111; border: 1px solid #00ff96; color: #00ff96; padding: 12px; border-radius: 5px; cursor: pointer; font-size: 0.8em; }
+        .back-btn { margin-top: 30px; background: none; border: 1px solid #888; color: #888; padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="section-label">IDN PAYMENT GATEWAY & BANKS</div>
+        <div class="btn-grid">
+            <button class="bank-btn">OVO</button><button class="bank-btn">GOPAY</button>
+            <button class="bank-btn">BCA</button><button class="bank-btn">MANDIRI</button>
+        </div>
+
+        <div class="section-label">GLOBAL GATEWAY (10 COUNTRIES)</div>
+        <div class="btn-grid">
+            <button class="bank-btn">STRIPE</button><button class="bank-btn">PAYPAL</button>
+            <button class="bank-btn">REVOLUT</button><button class="bank-btn">WISE</button>
+            <button class="bank-btn">WECHAT</button><button class="bank-btn">ALIPAY</button>
+            <button class="bank-btn">ZELLE</button><button class="bank-btn">KLARNA</button>
+            <button class="bank-btn">N26</button><button class="bank-btn">MONZO</button>
+        </div>
+
+        <div class="section-label">GLOBAL BANKS</div>
+        <div class="btn-grid">
+            <button class="bank-btn">HSBC</button><button class="bank-btn">JPMORGAN</button>
+            <button class="bank-btn">BARCLAYS</button><button class="bank-btn">BNP</button>
+            <button class="bank-btn">DEUTSCHE</button><button class="bank-btn">UBS</button>
+            <button class="bank-btn">SANTANDER</button><button class="bank-btn">DBS</button>
+            <button class="bank-btn">NOMURA</button><button class="bank-btn">ICBC</button>
+        </div>
+
+        <button class="back-btn" onclick="history.back()">← KEMBALI KE WALLET</button>
+    </div>
+</body>
+</html>

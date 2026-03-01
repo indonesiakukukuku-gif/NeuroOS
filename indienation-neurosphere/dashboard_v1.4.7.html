@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroSphere v1.4.7 - Aura Booster</title>
+    <style>
+        :root { --neon: #00ff00; --bg: #000; --dark-card: #0a0a0a; }
+        body { background: var(--bg); color: var(--neon); font-family: 'Courier New', monospace; margin: 0; }
+        .screen { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; }
+        .card { background: var(--dark-card); border: 2px solid var(--neon); padding: 25px; border-radius: 5px; width: 100%; max-width: 400px; text-align: center; position: relative; box-shadow: 0 0 20px rgba(0,255,0,0.2); }
+        .tm-value { font-size: 2em; color: var(--neon); font-weight: bold; text-shadow: 0 0 10px var(--neon); margin: 5px 0; }
+        .aura-meter { font-size: 1.2em; color: gold; font-weight: bold; margin: 10px 0; text-transform: uppercase; letter-spacing: 2px; }
+        .scan-line { position: absolute; width: 100%; height: 2px; background: var(--neon); top: 0; left: 0; opacity: 0.5; animation: scan 4s linear infinite; }
+        @keyframes scan { 0% { top: 0%; } 100% { top: 100%; } }
+        #list { margin-top: 15px; text-align: left; font-size: 0.75em; border-top: 1px solid var(--neon); padding-top: 10px; max-height: 180px; overflow-y: auto; }
+        .item { display: flex; justify-content: space-between; margin: 5px 0; border-bottom: 1px solid #111; padding: 3px 0; }
+        .item a { color: #fff; text-decoration: none; font-weight: bold; }
+        .btn { background: transparent; color: var(--neon); border: 2px solid var(--neon); padding: 10px; cursor: pointer; width: 100%; margin-top: 10px; font-weight: bold; text-transform: uppercase; }
+        .btn:hover { background: var(--neon); color: black; }
+        .status { font-size: 0.8em; margin-top: 20px; font-weight: bold; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
+.status-online { 
+    color: #00ff96; 
+    font-size: 0.7em; 
+    font-weight: bold; 
+    text-shadow: 0 0 5px #00ff96; 
+    animation: pulse-green 2s infinite; 
+} 
+@keyframes pulse-green { 
+    0% { opacity: 1; } 
+    50% { opacity: 0.4; } 
+    100% { opacity: 1; } 
+} 
+.iid-row { 
+    display: flex; 
+    justify-content: space-between; 
+    border-bottom: 1px solid #222; 
+    padding: 5px 0; 
+    font-family: "Courier New", monospace; 
+}
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <div class="card">
+            <div class="scan-line"></div>
+            <p style="color:white; font-size:0.8em; letter-spacing:2px;">INDIE-FOUNDER AUTHORITY</p>
+            <div class="tm-value">€100,000.00</div>
+            <div class="aura-meter">AURA: <span id="aura-score">0.1000</span></div>
+            <p style="font-size: 0.6em; color: #888;">(REPUTATION TOWARDS 1T LUV POOL)</p>
+            <div id="list">
+                <div class="item"><span>011: PURWANTORO</span> <a href="/cert/011">[CERT]</a></div>
+                <div class="item"><span>012: MARSELUS HASAN</span> <a href="/cert/012">[CERT]</a></div>
+                <div class="item"><span>013: KIKI KESTURI</span> <a href="/cert/013">[CERT]</a></div>
+                <div class="item"><span>014: DIAVATCHE BOGUI EUGÈNE</span> <a href="/cert/014">[CERT]</a></div>
+                <div class="item"><span>015: Miftahudin</span> <a href="/cert/015">[CERT]</a></div>
+                <div class="item"><span>016: Kastim</span> <a href="/cert/016">[CERT]</a></div>
+                <div class="item"><span>017: Meiriska</span> <a href="/cert/017">[CERT]</a></div>
+                <div class="item"><span>018: Rasheed Abiodun O. Gbaiye</span> <a href="/cert/018">[CERT]</a></div>
+                <div class="item"><span>019: Lugard Jumbo</span> <a href="/cert/019">[CERT]</a></div>
+                <div class="item"><span>020: Heri Heryanto</span> <a href="/cert/020">[CERT]</a></div>
+            </div>
+            <button class="btn" onclick="boostAura()">ACTIVATE BOOSTER</button>
+        </div>
+        <div class="status">🛡️ IID-010 GUARD: ACTIVE MONITORING</div>
+    </div>
+    <script>
+        let currentAura = parseFloat(localStorage.getItem('aura')) || 0.1;
+        document.getElementById('aura-score').innerText = currentAura.toFixed(4);
+        function boostAura() {
+            currentAura += 0.0015;
+            localStorage.setItem('aura', currentAura);
+            document.getElementById('aura-score').innerText = currentAura.toFixed(4);
+        }
+        setInterval(() => {
+            currentAura += 0.0001;
+            document.getElementById('aura-score').innerText = currentAura.toFixed(4);
+        }, 10000);
+    </script>
+<footer style="font-size:0.65em; color:#666; text-align:center; padding:30px; line-height:1.5; border-top:1px solid #eee; margin-top:50px;"> 
+    <strong>LEGAL NOTICE:</strong> This system constitutes a Sovereign Digital Value Architecture. <br> 
+    Anchor values recorded herein are internal systemic units (Technology Money Dialects) and do not constitute legal tender, securities, investment contracts, or fiat-backed financial instruments under any jurisdiction. <br> 
+    All distributions follow predefined protocol logic embedded within the architecture. 
+</footer>
+</body>
+</html>

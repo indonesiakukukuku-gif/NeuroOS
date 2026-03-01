@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In | Biometric Lock</title>
+    <style>
+        body { background: #000; color: #ffd700; font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { border: 2px solid #ffd700; padding: 30px; border-radius: 15px; text-align: center; width: 350px; }
+        .fingerprint-sensor { font-size: 4em; cursor: pointer; border: 2px solid #ffd700; border-radius: 50%; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; margin: 20px auto; }
+        input { background: #111; border: 1px solid #ffd700; color: #fff; padding: 10px; width: 90%; margin-bottom: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>SOVEREIGN ACCESS</h2>
+        <input type="text" id="iid_input" placeholder="ENTER IID (e.g., 011)">
+        <div class="fingerprint-sensor" onclick="verifyAccess()">☝️</div>
+        <p style="font-size: 0.7em;">VERIFY BIOMETRIC MATCH</p>
+    </div>
+
+    <script>
+        function verifyAccess() {
+            const iid = document.getElementById('iid_input').value;
+            if(!iid) { alert("Masukkan IID!"); return; }
+
+            // Simulasi AI Guard mengecek database sidik jari
+            // Untuk demo, kita anggap IID-011 adalah Purwantoro yang sudah terdaftar
+            if(iid === "011") {
+                alert("MATCH FOUND: Purwantoro Verified.");
+                window.location.href = 'wallet.html';
+            } else {
+                alert("ACCESS DENIED: Biometric Data Mismatch.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+// Auralang Reward Protocol v1.2
+// Logic: Kindness Validation, LUV Distribution, & Founder Appeals
+
+protocol AuraRewards {
+    let base_reward = 0;
+    let max_reward = 10;
+    let kindness_threshold = 0.4;
+
+    function evaluate_ledger(entry_metadata) {
+        if (entry_metadata.quality == "verified_estafet") {
+            let aura_score = AI_Guard.process_empathy_index(entry_metadata.content);
+            
+            if (aura_score < kindness_threshold) {
+                return flag_for_appeal(entry_metadata.id, "Low Aura Score detected.");
+            }
+            
+            return calculate_distribution(aura_score);
+        }
+        return base_reward;
+    }
+
+    function flag_for_appeal(id, reason) {
+        log("Entry " + id + " flagged for Founder Review: " + reason);
+        // AI-Guard pauses distribution until INDIE-Founder signs off
+        return "PENDING_REVIEW";
+    }
+}
+
+execute AuraRewards.init();

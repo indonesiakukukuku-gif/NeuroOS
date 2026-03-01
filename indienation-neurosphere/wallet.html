@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Wallet | TM KINDNESS</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            background: #000; color: #00e5ff; font-family: 'Arial', sans-serif; 
+            margin: 0; display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh; /* Bikin konten ke tengah vertikal */
+        }
+        .nft-card { 
+            width: 95%; max-width: 400px; border: 2px solid #00e5ff; 
+            border-radius: 25px; padding: 25px; text-align: center; 
+            box-shadow: 0 0 20px rgba(0,229,255,0.2); background: #050505;
+        }
+        .anchor-box { border: 2px solid #ffcc00; border-radius: 15px; padding: 15px; margin: 20px 0; }
+        .anchor-value { color: #ffcc00; font-size: 1.8em; font-weight: bold; }
+        
+        .balance-grid { display: flex; gap: 10px; margin-bottom: 20px; text-align: left; }
+        .main-bal { flex: 2; border: 1px solid #00e5ff; padding: 12px; border-radius: 12px; }
+        .side-bal { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+        .mini-box { border: 1px solid #00ff96; border-radius: 8px; padding: 5px; font-size: 0.7em; text-align: center; }
+
+        .btn-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+        .btn { 
+            padding: 12px; border-radius: 10px; font-size: 0.75em; font-weight: bold; 
+            cursor: pointer; border: 1px solid transparent; transition: 0.3s;
+        }
+        .btn-gold { border-color: #ffcc00; color: #ffcc00; background: none; }
+        .btn-cyan { border-color: #00e5ff; color: #00e5ff; background: none; }
+        .btn-exit { grid-column: span 2; background: #ff4444; color: #fff; margin-top: 10px; }
+        
+        .footer-info { font-size: 0.5em; color: #444; margin-top: 20px; line-height: 1.4; }
+    </style>
+</head>
+<body>
+    <div class="nft-card">
+        <div style="font-size: 0.6em; color: #888;">TIMESTAMP: 2026-02-21</div>
+        <div style="font-weight: bold; margin: 10px 0;">TM KINDNESS ESTAFET</div>
+        
+        <div class="anchor-box">
+            <div style="font-size: 0.6em; color: #ccc;">TOTAL LIVING VALUE</div>
+            <div class="anchor-value">€100.000,00</div>
+        </div>
+
+        <div class="balance-grid">
+            <div class="main-bal">
+                <div style="font-size: 0.6em;">IND-EUR STABLE</div>
+                <div style="font-weight: bold; font-size: 1.1em;">€1.000,00</div>
+                <div style="color: #00ff96; font-size: 0.8em;">Rp19.864.880</div>
+            </div>
+            <div class="side-bal">
+                <div class="mini-box">ENPE<br>0</div>
+                <div class="mini-box">LUV<br>0</div>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-cyan" onclick="location.href='gateways.html'">BANK & OVO</button>
+            <button class="btn btn-cyan" onclick="location.href='indiescan.html'">SEND TM</button>
+            <button class="btn btn-gold" onclick="alert('Menerbitkan Sertifikat IID...')">CERTIFICATE</button>
+            <button class="btn btn-gold" onclick="location.href='inheritance.html'">INHERITANCE</button>
+            <button class="btn btn-exit" onclick="location.href='index.html'">SIGN OUT</button>
+        </div>
+
+        <div class="footer-info">
+            IID: VERIFIED BIOMETRIC<br>
+            SECURED BY NEUROLANG-AURALANG
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "wallet_id": "0x01_INDIE_Founder",
+  "identity": "Sovereign_Active",
+  "assets": {
+    "LUV": {
+      "total_allocation": "20T",
+      "vesting_contract_1": { "amount": "19T", "lock_duration": "3_years", "unlock_date": "2029-02-01" },
+      "vesting_contract_2": { "amount": "1T", "lock_duration": "2_years", "unlock_date": "2028-02-01" }
+    },
+    "IND_EUR": {
+      "liquid_balance": "1000",
+      "anchor_pool": "99000",
+      "relay_status": "ACTIVE_RELAY_STEP_1"
+    }
+  },
+  "guardrail": "AI_GUARD_MONITORING_ONLY_NO_OVERRIDE"
+}

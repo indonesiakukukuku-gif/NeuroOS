@@ -1,0 +1,17 @@
+// Sovereign Genesis for IID-000000001
+IDENTITY "IID-000000001" [cite: 2026-02-19]
+
+// Koreksi: Day 2 tanpa bonus Day 365 (€990)
+SET ind_eur = 1270 [cite: 2026-02-17]
+SET anchor = 100000 [STATUS: LOCKED] [cite: 2025-12-23]
+
+// Perintah Inisialisasi Ulang Ledger
+INIT_LEDGER {
+    owner: "INDIE-Founder", [cite: 2026-01-29]
+    id: "IID-000000001", [cite: 2026-01-28]
+    liquid_balance: ind_eur,
+    anchor_identity: anchor,
+    timestamp: "2026-02-20T08:18:00Z"
+}
+
+PRINT "Ledger IID-000000001 Berhasil Diinisialisasi."

@@ -1,0 +1,28 @@
+{
+  "system": {
+    "name": "NeuroSphere Digital City",
+    "version": "IID-021-BEYOND",
+    "last_sync": "2026-02-27"
+  },
+  "tokenomics": {
+    "LUV": {
+      "total_supply": 100000000000000,
+      "circulating": 2022,
+      "locked_55_pct": 55000000000000,
+      "founder_vesting": 20000000000000,
+      "donation_pool": 14999999998000,
+      "operational": 10000000000000
+    },
+    "IND-EUR": {
+      "anchor_value": 100000,
+      "status": "STABLE"
+    }
+  },
+  "wallets": {
+    "IID-021-GLOBAL": 1,
+    "IID-022-GLOBAL": 10,
+    "IID-023-GLOBAL": 2,
+    "IID-024-GLOBAL": 5,
+    "IID-025-GLOBAL": 2004
+  }
+}

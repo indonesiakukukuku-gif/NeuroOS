@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroSphere | Gateway</title>
+    <style>
+        body { 
+            background: #000; color: #00ff96; font-family: 'Courier New', monospace;
+            margin: 0; display: flex; justify-content: center; align-items: center; 
+            height: 100vh; text-align: center;
+        }
+        .main-frame { 
+            width: 320px; border: 2px solid #00ff96; padding: 40px; 
+            border-radius: 20px; box-shadow: 0 0 20px rgba(0,255,150,0.2);
+        }
+        button { 
+            width: 100%; padding: 15px; margin: 10px 0; background: none; 
+            border: 1px solid #00ff96; color: #00ff96; cursor: pointer; 
+            font-weight: bold; transition: 0.3s;
+        }
+        button:hover { background: #00ff96; color: #000; }
+    </style>
+</head>
+<body>
+    <div class="main-frame">
+        <h1>NEUROSPHERE</h1>
+        <p style="font-size: 0.8em; margin-bottom: 30px;">SOVEREIGN IDENTITY SYSTEM</p>
+        <button onclick="location.href='signup.html'">SIGN UP (NEW IID)</button>
+        <button onclick="location.href='signin.html'">SIGN IN (BIOMETRIC)</button>
+    </div>
+</body>
+</html>

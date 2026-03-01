@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineage Invitation | NeuroSphere</title>
+    <style>
+        body { 
+            background: #000; color: #00ff96; font-family: 'Courier New', monospace; 
+            display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh; margin: 0; text-align: center;
+        }
+        .invite-box {
+            border: 2px solid #00ff96; padding: 40px; border-radius: 25px;
+            width: 90%; max-width: 400px; background: rgba(0,255,150,0.02);
+        }
+        .share-link {
+            background: #111; border: 1px dashed #ffd700; color: #ffd700;
+            padding: 15px; margin: 20px 0; font-size: 0.7em; word-break: break-all;
+        }
+        .btn-copy {
+            background: #00ff96; color: #000; border: none; padding: 12px 25px;
+            border-radius: 10px; font-weight: bold; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="invite-box">
+        <h2 style="color: #ffd700;">EXTEND THE LINEAGE</h2>
+        <p style="font-size: 0.7em;">Invite your kin to claim their Sovereign Identity and €100,000.00 Living Value.</p>
+        
+        <div class="share-link" id="linkText">
+            https://indienation-tm.web.app/signup?ref=IID-011-PURWANTORO
+        </div>
+
+        <button class="btn-copy" onclick="copyLink()">COPY INVITE LINK</button>
+        
+        <p style="font-size: 0.5em; color: #888; margin-top: 30px;">
+            Every successful activation increases your LUV Aura.<br>
+            Secured by AI-Guard Invitation Protocol.
+        </p>
+        
+        <a href="wallet.html" style="display:block; margin-top:20px; color:#444; font-size:0.6em; text-decoration:none;">← BACK TO WALLET</a>
+    </div>
+
+    <script>
+        function copyLink() {
+            const link = document.getElementById('linkText').innerText;
+            navigator.clipboard.writeText(link);
+            alert("Invitation Link Copied! Send this to your family.");
+        }
+    </script>
+</body>
+</html>

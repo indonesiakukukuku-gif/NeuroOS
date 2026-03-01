@@ -1,0 +1,195 @@
+{
+    "timestamp": "2026-02-20T11:05:31.515Z",
+    "founder": "INDIE-Founder",
+    "summary": {
+        "total_citizens": 25,
+        "total_luv_in_vaults": 25002293,
+        "total_anchor_value_eur": 2500000
+    },
+    "sovereign_wealth": {
+        "enpe_reserve": 80000000000000,
+        "staking_pool": 20000000000000,
+        "status": "LOCKED"
+    },
+    "emergency_pool": {
+        "liquid_luv": 15000000000000,
+        "status": "OPEN"
+    },
+    "identities": [
+        {
+            "iid": "IID-021-0000000021",
+            "country": "GLB",
+            "aura": "Emerald Green",
+            "luv": 1000206,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000022",
+            "country": "GLOBAL",
+            "aura": "Emerald Green",
+            "luv": 1000211,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000023",
+            "country": "USA",
+            "aura": "Emerald Green",
+            "luv": 1000234,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000024",
+            "country": "JAPAN",
+            "aura": "Emerald Green",
+            "luv": 1000214,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000025",
+            "country": "GERMANY",
+            "aura": "Pioneer Blue",
+            "luv": 1000220,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000026",
+            "country": "BRAZIL",
+            "aura": "Emerald Green",
+            "luv": 1000054,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000027",
+            "country": "INDIA",
+            "aura": "Pioneer Blue",
+            "luv": 1000056,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000028",
+            "country": "CANADA",
+            "aura": "Emerald Green",
+            "luv": 1000061,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000029",
+            "country": "SOUTH_AFRICA",
+            "aura": "Emerald Green",
+            "luv": 1000072,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000030",
+            "country": "AUSTRALIA",
+            "aura": "Pioneer Blue",
+            "luv": 1000043,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000031",
+            "country": "SOUTH_KOREA",
+            "aura": "Pioneer Blue",
+            "luv": 1000050,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000032",
+            "country": "MEXICO",
+            "aura": "Pioneer Blue",
+            "luv": 1000060,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000033",
+            "country": "EGYPT",
+            "aura": "Emerald Green",
+            "luv": 1000064,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000034",
+            "country": "UK",
+            "aura": "Pioneer Blue",
+            "luv": 1000070,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000035",
+            "country": "ITALY",
+            "aura": "Emerald Green",
+            "luv": 1000074,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000036",
+            "country": "RUSSIA",
+            "aura": "Pioneer Blue",
+            "luv": 1000045,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000037",
+            "country": "CHINA",
+            "aura": "Emerald Green",
+            "luv": 1000058,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000038",
+            "country": "ARGENTINA",
+            "aura": "Emerald Green",
+            "luv": 1000080,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000039",
+            "country": "TURKEY",
+            "aura": "Pioneer Blue",
+            "luv": 1000044,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000040",
+            "country": "SAUDI_ARABIA",
+            "aura": "Pioneer Blue",
+            "luv": 1000049,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000041",
+            "country": "NIGERIA",
+            "aura": "Emerald Green",
+            "luv": 1000066,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000042",
+            "country": "VIETNAM",
+            "aura": "Emerald Green",
+            "luv": 1000063,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000043",
+            "country": "THAILAND",
+            "aura": "Pioneer Blue",
+            "luv": 1000054,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000044",
+            "country": "SPAIN",
+            "aura": "Emerald Green",
+            "luv": 1000063,
+            "eur": 100000
+        },
+        {
+            "iid": "IID-021-0000000045",
+            "country": "POLAND",
+            "aura": "Emerald Green",
+            "luv": 1000082,
+            "eur": 100000
+        }
+    ]
+}

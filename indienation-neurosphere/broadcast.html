@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Broadcast | NeuroSphere</title>
+    <style>
+        body { 
+            background: #000; color: #ffd700; font-family: 'Courier New', monospace; 
+            display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh; margin: 0;
+        }
+        .broadcast-box { 
+            border: 2px solid #ffd700; padding: 30px; border-radius: 20px; 
+            width: 100%; max-width: 500px; background: rgba(255,215,0,0.05);
+        }
+        textarea { 
+            width: 100%; height: 150px; background: #111; border: 1px solid #444; 
+            color: #00ff96; padding: 15px; box-sizing: border-box; border-radius: 10px;
+            font-family: 'Courier New', monospace; margin: 20px 0;
+        }
+        .btn-send { 
+            background: #ffd700; color: #000; border: none; padding: 15px 30px; 
+            font-weight: bold; cursor: pointer; border-radius: 10px; width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="broadcast-box">
+        <h2 style="margin: 0;">SOVEREIGN BROADCAST</h2>
+        <p style="font-size: 0.7em; color: #888;">Direct transmission to IID-011 through IID-10B</p>
+        
+        <textarea id="msg" placeholder="Type your decree to the citizens..."></textarea>
+        
+        <button class="btn-send" onclick="sendBroadcast()">EXECUTE TRANSMISSION</button>
+        
+        <a href="founder-ops.html" style="display:block; margin-top:20px; color:#444; font-size:0.6em; text-decoration:none;">← RETURN TO COMMAND CENTER</a>
+    </div>
+
+    <script>
+        function sendBroadcast() {
+            const msg = document.getElementById('msg').value;
+            if(!msg) return;
+            alert("MESSAGE SIGNED & TRANSMITTED\nStatus: Manifesting in 21 Wallets.");
+            localStorage.setItem('last_broadcast', msg);
+        }
+    </script>
+</body>
+</html>

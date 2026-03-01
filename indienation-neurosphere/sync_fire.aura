@@ -1,0 +1,26 @@
+// NeuroSphere Sovereign Sync Logic - Forced Debug Mode
+// Authority: IID-000000001 (INDIE-Founder)
+
+IDENTITY "IID-000000001" {
+    VALIDATE: "SOVEREIGN_OVERRIDE"
+}
+
+PRINT "--- NEUROSPHERE SYNC START ---"
+PRINT "Checking IID: IID-000000001"
+PRINT "Project: indienation-neurosphere"
+
+// Memastikan saldo relay hari ke-2 (1000 + 270)
+UPDATE_STATE {
+    LIQUID: 1270,
+    ANCHOR: 100000,
+    STATUS: "LOCKED"
+}
+
+SYNC TO CLOUD {
+    PROVIDER: "FIREBASE",
+    PROJECT: "indienation-neurosphere",
+    PATH: "users/IID-000000001"
+}
+
+PRINT "--- SYNC SUCCESSFUL ---"
+

@@ -1,0 +1,40 @@
+{
+  "identity": {
+    "founder": "INDIE-Founder",
+    "id": "IID-021+",
+    "type": "Living Value Identity",
+    "origin": "NEUROSPHERE DIGITAL CITY",
+    "ssot_hash": "$(sha256sum MASTER_SOVEREIGN_MAP.txt | cut -d' ' -f1)"
+  },
+  "tokenomics_logic": {
+    "anchor_value": "€100,000 per person",
+    "lovely_coin_luv": {
+      "total_supply": "100,000,000,000,000",
+      "distribution": {
+        "founder_allocation": "20% (1% for 1M people, 1M LUV each)",
+        "disaster_donation": "15%",
+        "operational": "10%",
+        "locked_2_years": "55%"
+      }
+    },
+    "enpe_e_coin": {
+      "total_supply": "100,000,000,000,000",
+      "staking": "20%",
+      "swf_sovereign_wealth_fund": "80%"
+    },
+    "indie_nation_stable": {
+      "symbol": "IND-EUR",
+      "supply": "Unlimited (Open Status)",
+      "target_audience": "10,000,000 People (Initial Stage)"
+    }
+  },
+  "governance": {
+    "ai_guard_control": "100% after 3 years",
+    "kickoff_date": "2026-02-01",
+    "aura_rewards_start": "2027-02-01"
+  },
+  "security": {
+    "encryption": "Lattice-Quantum (Auralang)",
+    "integrity_check": "SHA-256 Verified"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Ledger | NeuroSphere</title>
+    <style>
+        body { 
+            background: #000; color: #ffd700; font-family: 'Courier New', monospace; 
+            display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh; margin: 0; padding: 20px;
+        }
+        .ledger-box { 
+            border: 2px solid #ffd700; padding: 30px; border-radius: 20px; 
+            width: 100%; max-width: 400px; text-align: center;
+            background: rgba(255, 215, 0, 0.02);
+        }
+        .lock-icon { font-size: 3em; margin-bottom: 20px; }
+        .input-group { margin: 20px 0; text-align: left; }
+        input { 
+            background: #111; border: 1px solid #444; color: #fff; 
+            padding: 12px; width: 100%; margin-top: 5px; box-sizing: border-box;
+        }
+        .btn-lock { 
+            background: #ffd700; color: #000; border: none; padding: 15px; 
+            width: 100%; font-weight: bold; cursor: pointer; margin-top: 20px;
+        }
+        .disclaimer { font-size: 0.5em; color: #888; margin-top: 20px; line-height: 1.5; }
+    </style>
+</head>
+<body>
+    <div class="ledger-box">
+        <div class="lock-icon">🔒</div>
+        <h2 style="font-size: 1.2em;">INHERITANCE LEDGER</h2>
+        <p style="font-size: 0.7em; color: #00ff96;">INTERNATIONAL SERIES PROTOCOL</p>
+
+        <div class="input-group">
+            <label style="font-size: 0.7em;">BENEFICIARY IID / NAME</label>
+            <input type="text" placeholder="Enter Nominee Details">
+        </div>
+
+        <div class="input-group">
+            <label style="font-size: 0.7em;">TRANSFER RATIO</label>
+            <input type="text" value="100% LIVING VALUE" readonly>
+        </div>
+
+        <button class="btn-lock" onclick="alert('Biometric Key Required to Lock Beneficiary.')">LOCK SUCCESSION</button>
+        
+        <div class="disclaimer">
+            This asset is inheritable. In the event of identity inactivity, 
+            the AI-Guard will trigger the transfer to the verified biometric 
+            successor. Secured by Neurolang-Auralang.
+        </div>
+        
+        <a href="wallet.html" style="display:block; margin-top:20px; color:#888; font-size:0.7em; text-decoration:none;">← BACK TO WALLET</a>
+    </div>
+</body>
+</html>

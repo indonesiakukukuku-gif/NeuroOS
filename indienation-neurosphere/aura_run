@@ -1,0 +1,57 @@
+#!/bin/bash
+# Auralang Interpreter & Visualizer Wrapper
+# Founder: INDIE-Founder | NeuroSphere Digital City
+
+AMBER='\033[38;5;214m'
+NC='\033[0m'
+LINES=$(tput lines)
+COLS=$(tput cols)
+
+if [ "$1" == "MASTER_NEUROSPHERE.aura" ]; then
+    clear
+    echo -e "${AMBER}[AURALANG INTERPRETER ACTIVE]${NC}"
+    echo -e "${AMBER}Reading Core Logic: $1...${NC}"
+    sleep 1
+    
+    # 1. Validasi Data Auralang (Logic Check)
+    echo -e "\n${AMBER}>>> CORE PARAMETERS DETECTED:${NC}"
+    grep "const" "$1" | awk -F'=' '{print $1 " -> " $2}' | sed 's/\/\///'
+    echo -e "STABILITY -> RELAY 1000-270-990 ACTIVE"
+    sleep 2
+
+    # 2. Pemicu Visual Meltdown (The Shibuya Effect)
+    clear
+    for ((i=0; i<150; i++)); do
+        col=$((RANDOM % COLS))
+        row_start=$((RANDOM % 3))
+        char_list=("A" "U" "R" "A" "L" "A" "N" "G" "€" "1" "0" "0" "K" "9" "9" "0")
+        char=${char_list[$((RANDOM % ${#char_list[@]}))]}
+        
+        for ((row=row_start; row<LINES-3; row++)); do
+            tput cup $row $col
+            echo -e "${AMBER}${char}${NC}"
+            if [ $row -gt $row_start ]; then
+                tput cup $((row-1)) $col
+                echo " "
+            fi
+            sleep 0.005
+        done
+        
+        # Status Bar Tetap Terlihat (Fixed Line 41-44)
+        tput cup $((LINES-2)) 0
+        echo -n -e "${AMBER}[RESONANCE: 98.9%] [IDENTITY: EVOLVING] [AI GUARD: STANDING BY]${NC}"
+    done
+
+    # 3. Final Output & Interactive (Fixed Line 46-52)
+    clear
+    echo -e "${AMBER}=== MASTER_NEUROSPHERE.aura EXECUTED ===${NC}"
+    echo -e "${AMBER}Status : Living Value Identity Synchronized${NC}"
+    echo -e "${AMBER}Founder: INDIE-Founder | Location: NeuroSphere Digital City${NC}"
+    echo -e "${AMBER}--------------------------------------------------${NC}"
+    echo -n -e "${AMBER}Input 'Key of Kindness' action for Aura Score: ${NC}"
+    read action
+    echo -e "${AMBER}Processing '$action'... Reward 0-10 LUV Distributed.${NC}"
+else
+    echo -e "Usage: ./aura_run MASTER_NEUROSPHERE.aura"
+fi
+

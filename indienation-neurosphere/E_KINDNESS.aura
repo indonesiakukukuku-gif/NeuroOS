@@ -1,0 +1,30 @@
+// NEUROSPHERE SOVEREIGN ECONOMIC LAYER
+// Contract: E-KINDNESS Distribution Logic v1.0
+// Founder: INDIE-Founder
+
+identity E_KINDNESS {
+    symbol: "ENPE",
+    max_daily_reward: 10.0,
+    min_daily_reward: 0.0
+}
+
+contract DistributeRewards {
+    function calculate_daily_payout(pioneer_aura, social_reputation) {
+        // Algoritma dasar: Base (2.0) + (Aura * Reputation Factor)
+        let base_payout = 2.0;
+        let reward = base_payout * pioneer_aura;
+        
+        // Memastikan tidak melebihi batas 10 koin
+        if (reward > 10.0) {
+            return 10.0;
+        }
+        
+        return reward;
+    }
+
+    function execute_transfer(iid_target, amount) {
+        // Logika pengiriman koin ke saldo TM Pioneer
+        print("Distributing " + amount + " ENPE to " + iid_target);
+        // Terhubung ke Ledger TM melalui Neurolang Bridge
+    }
+}

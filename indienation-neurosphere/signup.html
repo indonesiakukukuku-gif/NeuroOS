@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Registration | International Gateway</title>
+    <style>
+        body { 
+            background: #000; color: #00ff96; font-family: 'Courier New', monospace; 
+            display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh; margin: 0;
+        }
+        .global-box { 
+            border: 2px solid #00ff96; padding: 30px; border-radius: 20px; 
+            text-align: center; width: 380px; background: rgba(0,255,150,0.02);
+        }
+        .iid-badge { color: #ffd700; font-size: 0.8em; margin-bottom: 20px; }
+        .fingerprint-enroll { 
+            font-size: 4em; cursor: pointer; border: 2px dashed #00ff96; 
+            border-radius: 50%; width: 120px; height: 120px; 
+            display: flex; align-items: center; justify-content: center; 
+            margin: 20px auto; transition: 0.5s;
+        }
+        .fingerprint-enroll.active { background: #00ff96; color: #000; box-shadow: 0 0 30px #00ff96; border-style: solid; }
+        input { background: #111; border: 1px solid #333; color: #fff; padding: 12px; width: 90%; margin: 10px 0; border-radius: 5px; }
+        .btn-global { 
+            background: #00ff96; color: #000; border: none; padding: 15px; 
+            width: 100%; font-weight: bold; cursor: not-allowed; opacity: 0.5; margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="global-box">
+        <div class="iid-badge">GLOBAL EXPANSION | SERIES: IID-021+</div>
+        <h2 style="font-size: 1.2em;">INTERNATIONAL ENROLLMENT</h2>
+        
+        <input type="text" id="name" placeholder="LEGAL FULL NAME">
+        <input type="text" id="country" placeholder="COUNTRY OF ORIGIN">
+        
+        <div class="fingerprint-enroll" id="sensor" onclick="enrollGlobal()">☝️</div>
+        <p id="status" style="font-size: 0.6em; color: #888;">TAP BIOMETRIC SENSOR FOR GLOBAL REGISTRY</p>
+        
+        <button id="regBtn" class="btn-global" disabled onclick="finalizeGlobal()">ACTIVATE GLOBAL IID</button>
+        <p style="font-size: 0.5em; color: #ffd700; margin-top: 15px;">ANCHOR VALUE: €100,000.00 ALLOCATED</p>
+    </div>
+
+    <script>
+        function enrollGlobal() {
+            const name = document.getElementById('name').value;
+            if(!name) { alert("Please enter your legal name."); return; }
+            
+            document.getElementById('sensor').classList.add('active');
+            document.getElementById('status').innerText = "GLOBAL BIOMETRIC SECURED";
+            document.getElementById('status').style.color = "#00ff96";
+            
+            const btn = document.getElementById('regBtn');
+            btn.disabled = false;
+            btn.style.opacity = "1";
+            btn.style.cursor = "pointer";
+        }
+
+        function finalizeGlobal() {
+            alert("GLOBAL ENROLLMENT COMPLETE\nIID Assigned: 021\nSovereignty Status: ACTIVE");
+            window.location.href = 'wallet.html';
+        }
+    </script>
+</body>
+</html>

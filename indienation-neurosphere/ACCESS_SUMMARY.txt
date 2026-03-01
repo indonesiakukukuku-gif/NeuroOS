@@ -1,0 +1,10 @@
+==================================================
+🌐 NEUROSPHERE GLOBAL ACCESS (ACTIVE)
+==================================================
+1. HEARTBEAT ENGINE  : [Otonom] Meredistribusi LUV
+2. API GATEWAY       : http://localhost:3000/api/v1/leaderboard
+3. SOVEREIGN PASSPORT: http://localhost:3001/passport/[IID]
+4. FOUNDER ID        : IID-021-0000000023
+==================================================
+🛡️ STATUS: SOVEREIGN, IMMORTAL, SECURE.
+==================================================

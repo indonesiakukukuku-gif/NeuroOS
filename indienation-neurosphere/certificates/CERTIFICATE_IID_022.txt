@@ -1,0 +1,9 @@
+NEUROSPHERE SOVEREIGN IDENTITY
+------------------------------
+IID: IID_022
+STATUS: ACTIVE
+TM-ANCHOR: €100,000
+WALLET-HASH: 7717caafc5c4d0c20b29f63bda41da870b77c5f72dd5d51b946d324820d81881
+DIRECT-LINK: https://indienation-tm.web.app/verify.html?id=IID_022&hash=7717caafc5c4
+------------------------------
+AURA-LEVEL: 1.0

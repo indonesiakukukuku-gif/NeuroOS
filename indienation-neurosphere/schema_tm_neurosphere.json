@@ -1,0 +1,19 @@
+{
+  "IID-000000001": {
+    "profile": { "name": "INDIE-Founder", "authority": "GRANTED" },
+    "wallet_liquid": {
+      "ind_eur_balance": 1270, 
+      "note": "Day 2: 1000 base + 270 relay"
+    },
+    "value_identity": {
+      "anchor_value": 100000,
+      "status": "LOCKED",
+      "label": "Sovereign Wealth Anchor"
+    },
+    "relay_metadata": {
+      "current_day": 2,
+      "next_payout": 270,
+      "pending_final_bonus": 990
+    }
+  }
+}

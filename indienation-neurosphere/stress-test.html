@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Test | AI-Guard Simulation</title>
+    <style>
+        body { 
+            background: #000; color: #ff4444; font-family: 'Courier New', monospace; 
+            padding: 30px; display: flex; flex-direction: column; align-items: center;
+        }
+        .sim-box {
+            border: 2px solid #ff4444; padding: 30px; border-radius: 15px;
+            width: 100%; max-width: 600px; background: rgba(255, 68, 68, 0.05);
+        }
+        .data-stream {
+            background: #050505; height: 200px; overflow-y: hidden;
+            padding: 15px; font-size: 0.6em; color: #ff4444; border: 1px solid #222; margin: 20px 0;
+        }
+        .metric-row { display: flex; justify-content: space-between; margin: 10px 0; color: #fff; }
+        .btn-simulate {
+            background: #ff4444; color: #fff; border: none; padding: 15px;
+            width: 100%; font-weight: bold; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI-GUARD STRESS TEST</h1>
+    <div class="sim-box">
+        <div class="metric-row">
+            <span>TARGET LOAD:</span>
+            <span>1,000 NEW IIDs</span>
+        </div>
+        <div class="metric-row">
+            <span>LIQUIDITY LOCK:</span>
+            <span style="color: #ffd700;">€100,000,000.00</span>
+        </div>
+        
+        <div class="data-stream" id="stream">
+            READY TO EXECUTE SIMULATION...
+        </div>
+
+        <button class="btn-simulate" onclick="runSim()">START MASS-BOARDING SIMULATION</button>
+    </div>
+
+    <script>
+        function runSim() {
+            const stream = document.getElementById('stream');
+            let users = 0;
+            const interval = setInterval(() => {
+                users += 50;
+                stream.innerHTML += `[SYSTEM] Processing IID-${021 + users} ... SUCCESS (Biometric Verified)<br>`;
+                stream.scrollTop = stream.scrollHeight;
+                if(users >= 1000) {
+                    clearInterval(interval);
+                    stream.innerHTML += `<br>[SUCCESS] 1,000 IIDs ANCHORED.<br>[ALERT] TREASURY UPDATED: €102.1M RESERVED.`;
+                    alert("STRESS TEST COMPLETE: AI-Guard Stabilized the load.");
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>

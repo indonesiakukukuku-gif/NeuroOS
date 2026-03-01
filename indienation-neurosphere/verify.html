@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEUROSPHERE | Sovereign Verification</title>
+    <style>
+        body { background: #050505; color: #fff; font-family: monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { border: 1px solid #00ff96; padding: 40px; border-radius: 15px; text-align: center; max-width: 400px; background: #000; }
+        .aura-circle { width: 80px; height: 80px; border-radius: 50%; background: radial-gradient(circle, #00ff96, transparent); margin: 0 auto 20px; }
+        .status-badge { padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 10px; display: inline-block; }
+        .verified { background: rgba(0,255,150,0.1); color: #00ff96; border: 1px solid #00ff96; }
+        .invalid { background: rgba(255,0,0,0.1); color: #ff4444; border: 1px solid #ff4444; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="aura-circle" id="aura-v"></div>
+        <div id="badge" class="status-badge">VALIDATING...</div>
+        <div id="details" style="font-size: 0.8em; color: #888;">
+            ID: <span id="v-iid" style="color:#fff;">-</span><br>
+            Aura: <span id="v-aura" style="color:#00ff96;">-</span>
+        </div>
+    </div>
+
+    <script>
+        async function verify() {
+            const params = new URLSearchParams(window.location.search);
+            const iid = params.get('id');
+            const urlHash = params.get('hash');
+            
+            try {
+                const response = await fetch(`/certificates/CERTIFICATE_${iid}.txt`);
+                const text = await response.text();
+                const realHash = text.match(/WALLET-HASH: (.*)/)[1];
+                const aura = text.match(/AURA-LEVEL: ([\d.]+)/)[1];
+
+                document.getElementById('v-iid').innerText = iid;
+                document.getElementById('v-aura').innerText = aura;
+
+                if (realHash.startsWith(urlHash)) {
+                    document.getElementById('badge').innerText = "✅ AUTHENTIC IDENTITY";
+                    document.getElementById('badge').className = "status-badge verified";
+                } else {
+                    throw new Error();
+                }
+            } catch (e) {
+                document.getElementById('badge').innerText = "❌ INVALID / TAMPERED";
+                document.getElementById('badge').className = "status-badge invalid";
+                document.getElementById('aura-v').style.background = "radial-gradient(circle, #ff4444, transparent)";
+            }
+        }
+        verify();
+    </script>
+</body>
+</html>

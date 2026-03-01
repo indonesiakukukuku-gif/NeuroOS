@@ -1,0 +1,18 @@
+// CONTRACT: AuraLiquidityBridge
+// REPO: indienation-neurosphere
+// AUTHOR: INDIE-Founder
+
+contract AuraLiquidityBridge {
+    address public founder = "INDIE-Founder";
+    uint256 public operationalReserve = 10; 
+
+    function provideLiquidity(uint256 enpeAmount, uint256 bnbAmount) external {
+        if (msg.sender == founder) {
+            // Logika integrasi ke DEX
+        }
+    }
+
+    function swapForOps(uint256 amountENPE) public {
+        // Logika penukaran otomatis ke BNB untuk Server
+    }
+}

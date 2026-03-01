@@ -1,0 +1,14 @@
+{
+  "certificate_type": "GENESIS_SOVEREIGN_IDENTITY",
+  "issuer": "AI-GUARD (NeuroSphere Core)",
+  "holder": "INDIE-Founder",
+  "founder_id": "IID-021-GLOBAL",
+  "issuance_date": "2026-02-27",
+  "sovereign_claims": {
+    "stable_anchor": "€100,000 IND-EUR",
+    "luv_supply_limit": "100,000,000,000,000",
+    "lock_protocol": "3-Year Automated Time-Lock"
+  },
+  "digital_signature": "NEURO-$(date +%s | sha256sum | head -c 32)",
+  "status": "VALID"
+}

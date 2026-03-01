@@ -1,0 +1,12 @@
+{
+  "transaction_id": "TXN-XXXXXX",
+  "timestamp": "2026-02-22T11:10:00Z",
+  "founder": "INDIE-Founder",
+  "source_asset": "ENPE",
+  "target_asset": "BNB",
+  "amount_swapped": 0,
+  "equivalent_value": "€0.00",
+  "purpose": "Server Payment / Firebase / Cloud",
+  "status": "PENDING_VALIDATION_BY_AI_GUARD",
+  "integrity_hash": "sha256_placeholder"
+}

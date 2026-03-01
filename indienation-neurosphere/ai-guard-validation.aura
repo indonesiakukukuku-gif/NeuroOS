@@ -1,0 +1,25 @@
+// NEUROLANG - AI GUARD IDENTITY VALIDATION
+// INDIE-FOUNDER SOVEREIGNTY PROTOCOL
+
+#define MIN_AGE 17
+#define SYSTEM_STATUS "ACTIVE"
+
+[GUARD_LOGIC] {
+    let current_year = 2026;
+    let birth_year = input.dob_year;
+    let user_aura = input.biometric_scan;
+
+    IF (current_year - birth_year) < MIN_AGE {
+        DISPLAY_MESSAGE("AI-GUARD: Maaf, Anda belum cukup umur untuk memegang kedaulatan digital ini.");
+        SET_ACCESS(LOCKED);
+        LOG_REJECTION(user_identity);
+    } 
+    ELSE {
+        VALIDATE_AURA(user_aura); // Memeriksa pendaran aura biometrik
+        DISPLAY_MESSAGE("AI-GUARD: Kedaulatan Dikonfirmasi.");
+        INITIATE_RELAY(1000, "EUR"); // Memulai estafet awal €1000
+        PROCEED_TO_NEUROSPHERE();
+    }
+}
+
+// END OF CORE SOVEREIGNTY KEY

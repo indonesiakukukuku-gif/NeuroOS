@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Passport | NeuroSphere</title>
+    <style>
+        body { 
+            background: #000; color: #fff; font-family: 'Courier New', monospace; 
+            margin: 0; display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh; padding: 20px;
+        }
+        .passport-card {
+            width: 100%; max-width: 350px; background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            border: 2px solid #ffd700; border-radius: 20px; overflow: hidden;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.2); position: relative;
+        }
+        .passport-header { background: #ffd700; color: #000; padding: 15px; font-weight: bold; text-align: center; letter-spacing: 2px; }
+        .content { padding: 20px; text-align: center; }
+        .qr-section { background: #fff; padding: 10px; display: inline-block; border-radius: 10px; margin: 20px 0; }
+        .info-row { display: flex; justify-content: space-between; font-size: 0.7em; border-bottom: 1px solid #333; padding: 8px 0; text-align: left; }
+        .label { color: #888; }
+        .val { color: #ffd700; font-weight: bold; }
+        .seal-watermark { position: absolute; bottom: -20px; right: -20px; width: 120px; opacity: 0.1; transform: rotate(-20deg); pointer-events: none; }
+        .footer-note { font-size: 0.5em; color: #444; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="passport-card">
+        <div class="passport-header">SOVEREIGN PASSPORT</div>
+        
+        <div class="content">
+            <div style="font-size: 0.6em; color: #ffd700; margin-bottom: 5px;">IID: 011 / SERIES: PIONEER</div>
+            <div style="font-size: 1.2em; font-weight: bold;">PURWANTORO</div>
+            
+            <div class="qr-section">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=IID-011-PURWANTORO-100K-EUR" alt="QR Identity">
+            </div>
+
+            <div class="info-row">
+                <span class="label">CITIZENSHIP</span>
+                <span class="val">NEUROSPHERE</span>
+            </div>
+            <div class="info-row">
+                <span class="label">VALUE ALLOCATION</span>
+                <span class="val">€100,000.00</span>
+            </div>
+            <div class="info-row">
+                <span class="label">INHERITANCE</span>
+                <span class="val">LOCKED & SECURED</span>
+            </div>
+            <div class="info-row">
+                <span class="label">AURA (LUV)</span>
+                <span class="val">COLLECTING</span>
+            </div>
+
+            <div class="footer-note">
+                THIS DOCUMENT REPRESENTS A LIVING VALUE IDENTITY.<br>
+                VALID GLOBALLY UNDER AI-GUARD SOVEREIGNTY.
+            </div>
+        </div>
+        
+        <img src="https://i.ibb.co/vzYm0Nn/seal-placeholder.png" class="seal-watermark" alt="Seal">
+    </div>
+</body>
+</html>

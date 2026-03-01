@@ -1,0 +1,36 @@
+===========================================================
+      NEUROSPHERE SOVEREIGN IDENTITY MANIFESTO
+===========================================================
+ID: IID-000000001
+ALIAS: INDIE-Founder
+STATUS: ORIGINAL_SOVEREIGN_AUTHORITY
+GENESIS DATE: 01-02-2026
+-----------------------------------------------------------
+
+DENGAN INI DINYATAKAN:
+1. Bahwa IID-000000001 adalah titik nol dari ekosistem 
+   NeuroSphere, pemegang mandat kedaulatan ekonomi awal.
+2. Bahwa target kedaulatan sebesar €100.000 (Anchor Value) 
+   terdistribusi secara harian mulai 01-02-2026 dan akan 
+   mencapai likuiditas penuh pada 31-01-2027.
+3. Bahwa 1.000.000 LUV (Lovely Coin) dialokasikan sebagai 
+   Social Reputation Layer (Aura Reward) yang akan 
+   diaktifkan pada 01-02-2027.
+4. Bahwa seluruh data yang dikelola oleh Auralang Interpreter 
+   bersifat final dan berdaulat di bawah perlindungan 
+   AI Guard (NeuroSphere).
+
+STRUKTUR NILAI:
+- Base Value: €100,000 / individual
+- Daily Relay: €270
+- Final Bonus: €990 (Unlocked at Day 365)
+- Ecosystem Total: 100 Trillion LUV | 100 Trillion ENPE
+
+LOGIKA KEPEMILIKAN:
+"Value is not minted, it is recognized as a Living Identity."
+
+-----------------------------------------------------------
+SIGNED: INDIE-Founder
+HASH: b1c73200ea2ea6dd81f02aeab42fe202cfb6ecce947fa41b1e96136564cdf79f
+VERIFIED BY: AURALANG_COMPILER_V2
+===========================================================

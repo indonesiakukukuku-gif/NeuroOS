@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroSphere | Sovereign Hub</title>
+    <style>
+        :root { --primary: #00bcd4; --bg: #0a0a0a; --text: #e0e0e0; --card: #1a1a1a; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); 
+               margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        .container { max-width: 600px; width: 90%; text-align: center; }
+        h1 { color: var(--primary); letter-spacing: 2px; margin-bottom: 5px; }
+        .subtitle { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
+        .grid { display: grid; gap: 20px; }
+        .nav-card { background: var(--card); border: 1px solid #333; padding: 20px; border-radius: 12px; 
+                    text-decoration: none; color: var(--text); transition: 0.3s; display: block; text-align: left; }
+        .nav-card:hover { border-color: var(--primary); transform: translateY(-3px); }
+        .nav-card h3 { margin: 0 0 5px 0; color: var(--primary); }
+        .nav-card p { margin: 0; font-size: 0.85rem; color: #aaa; }
+        .status-dot { height: 8px; width: 8px; background-color: #4caf50; border-radius: 50%; display: inline-block; margin-right: 5px; }
+        .status-locked { background-color: #f44336; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>NEUROSPHERE</h1>
+    <p class="subtitle">Sovereign Governance Ecosystem</p>
+
+    <div class="grid">
+        <a href="register/index.html" class="nav-card">
+            <h3><span class="status-dot"></span> Genesis Portal</h3>
+            <p>Pendaftaran IID & Binding Slot. <a href="apa-ini.html" style="color:#00bcd4">Pelajari selengkapnya.</a></p>
+        </a>
+
+        <a href="#" class="nav-card" onclick="alert('Akses Terbatas: Memerlukan Otoritas 9/9 Multi-Sig.')">
+            <h3><span class="status-dot status-locked"></span> Governance Dashboard</h3>
+            <p>Panel Konsensus & Pengambilan Keputusan Strategis (LOCKED).</p>
+        </a>
+
+        <a href="#" class="nav-card" onclick="alert('Dalam Pengembangan: Sinkronisasi Ledger GitHub.')">
+            <h3><span class="status-dot"></span> Transparency Explorer</h3>
+            <p>Audit publik, status vault, dan laporan distribusi E-Kindness.</p>
+        </a>
+    </div>
+
+    <p style="margin-top: 50px; font-size: 0.7rem; color: #444;">
+        IndieNation Sovereign System © 2026 | Founder: INDIE-Founder
+    </p>
+</div>
+
+</body>
+</html>
