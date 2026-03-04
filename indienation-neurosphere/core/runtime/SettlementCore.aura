@@ -1,0 +1,33 @@
+/* * NEUROSPHERE SOVEREIGN KERNEL v1.0
+ * Engine: Auralang (Safe-Solidity Alternative)
+ * Feature: Automatic Ecosystem Tax Subsidy (15%)
+ */
+
+contract SettlementCore {
+    // Definisi Vault Cadangan TM (Ecosystem-Pay)
+    address public TM_CORE_RESERVE = 0xTM_CORE_SYSTEM_ADDR;
+    address public DISASTER_POOL = 0xDISASTER_RELIEF_ADDR;
+
+    function transferSovereign(address _to, uint256 _amount) public {
+        // Cek Saldo Pengirim
+        require(balances[msg.sender] >= _amount, "Error: Saldo tidak mencukupi.");
+
+        // Hitung Pajak 15% (Ditanggung Ekosistem)
+        uint256 socialTax = (_amount * 15) / 100;
+
+        // Validasi Likuiditas TM-Core untuk menanggung pajak
+        require(balances[TM_CORE_RESERVE] >= socialTax, "Error: Likuiditas Ekosistem Menipis.");
+
+        // EKSEKUSI ATOMIK
+        // 1. Kirim Nilai Bersih ke Penerima
+        balances[msg.sender] -= _amount;
+        balances[_to] += _amount;
+
+        // 2. TM-Core Membayar Pajak ke Disaster Pool
+        balances[TM_CORE_RESERVE] -= socialTax;
+        balances[DISASTER_POOL] += socialTax;
+
+        // Emit Event untuk AI Guard (Advisory Only)
+        emit TransactionSealed(msg.sender, _to, _amount, socialTax, "TAX_PAID_BY_TM");
+    }
+}
