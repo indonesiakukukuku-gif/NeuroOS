@@ -1,0 +1,17 @@
+// @path: ~/indienation-neurosphere/indie_ai/argi_brain/genesis_sync.aura
+// @owner: IID-021+
+
+contract Genesis_Action_Sync {
+    function run() {
+        // Trigger 1: Cek Rencana Perjalanan (Sektor 6)
+        var flight = TravelSector.getLatestFlight("IID-021+");
+        
+        // Trigger 2: Cari Peluang Ekonomi di Destinasi (Sektor 17)
+        var deals = UMKM_Sector.findDeals(flight.destination);
+        
+        // Output: Voice AI Alert (Track C)
+        if (deals.count > 0) {
+            VoiceEngine.notify("Founder, di " + flight.destination + " ada 3 UMKM siap ekspor. Sinkronkan dengan jadwal Anda?");
+        }
+    }
+}

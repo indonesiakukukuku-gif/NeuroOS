@@ -1,0 +1,13 @@
+// Soft Launch Activation: 1M Pioneers
+protocol SoftLaunch_Gate {
+    target.count = 1_000_000;
+    status = ACTIVE;
+
+    on.user_join(iid) {
+        verify.identity(S33);
+        initialize.wallet(iid);
+        stream.kindness(1000, IND-EUR); // Initial Relay Kick-off
+        attach.argi_doctor(iid);        // Personal System Doctor assigned
+    }
+}
+

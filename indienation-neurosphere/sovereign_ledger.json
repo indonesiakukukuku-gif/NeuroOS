@@ -1,23 +1,15 @@
 {
-  "ecosystem": "NeuroSphere",
-  "version": "1.4.7",
-  "anchor_value_base": 100000,
-  "currency_anchor": "IND-EUR",
-  "founder": "INDIE-Founder",
-  "guard_id": "IID-010",
-  "total_enpe_supply": "100T",
-  "pioneers": [
-    {"iid": "011", "name": "PURWANTORO", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "012", "name": "MARSELUS HASAN", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "013", "name": "KIKI KESTURI", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "014", "name": "DIAVATCHE BOGUI EUGÈNE", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "015", "name": "Miftahudin", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "016", "name": "Kastim", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "017", "name": "Meiriska", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "018", "name": "Rasheed Abiodun O. Gbaiye", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "019", "name": "Lugard Jumbo", "aura_initial": 0.1, "status": "ANCHORED"},
-    {"iid": "020", "name": "Heri Heryanto", "aura_initial": 0.1, "status": "ANCHORED"}
-  ],
-  "last_audit": "2026-02-21",
-  "note": "Data locked in Deep Memory Protocol"
+  "ledger": {
+    "011": 1300,
+    "012": 1200,
+    "013": 1200,
+    "014": 1000,
+    "015": 1500,
+    "016": 1000,
+    "017": 1400,
+    "018": 1000,
+    "019": 1200,
+    "020": 1100,
+    "node_founder": 98100
+  }
 }

@@ -1,0 +1,23 @@
+# NEUROSPHERE DIGITAL CITY - SECURITY PROTOCOL v1.0
+# AUTHOR: INDIE-Founder
+# SYSTEM: AI GUARD & AURALANG INTERPRETER
+
+[IDENTITY_PROTECTION]
+- UserID: IID-021+ (International Scale)
+- Anchor Value: €100.000 / Person
+- Status: Soulbound NFT (Non-Transferable)
+
+[ANTI_SPOOFING_LOGIC]
+1. LATENCY_CHECK: Max 5ms RTT. If > 5ms, Trigger "Remote Access Alert".
+2. HARDWARE_BOND: Auralang only compiles on DeviceID registered in IID.
+3. NEURO_PATTERN: AI Guard monitors typing/coding cadence via Neurolang.
+
+[TOKENOMY_RELAY_PROTECTION]
+- Day 1: €1000 Distribution.
+- Day 2-364: €270 Daily.
+- Day 365: €990 Final Relay.
+- Lock Policy: Assets locked 2-3 years to prevent immediate laundering.
+
+[CONFLICT_OF_INTEREST_PREVENTION]
+- No external wallet transfers for Relay Coins without AI Guard Validation.
+- LUV Genesis starts 1 Feb 2027. Any breach resets Aura to 0.

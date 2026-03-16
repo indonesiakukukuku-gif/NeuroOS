@@ -1,0 +1,12 @@
+{
+    "stalls": [
+        {
+            "id": 1,
+            "name": "Digital Souvenir S06",
+            "level": 10,
+            "cost_to_upgrade": 500,
+            "production_rate": 20
+        }
+    ],
+    "total_produced_luv": 4
+}

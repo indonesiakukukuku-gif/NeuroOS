@@ -1,0 +1,37 @@
+// RGL Injection: Sector 25 - Distribution Cell
+cell DistributionCell_S25 {
+    
+    // DNA: Baseline Abundance (Immutable)
+    dna anchor_value = 100000; // Euro per IID
+    dna debt_allowance = 0;    // Absolute Zero Debt
+    
+    // Telomere: Integrity Monitor
+    monitor integrity_check {
+        if (hash(current_logic) != hash(baseline_logic)) {
+            trigger ARGI_REGEN(S05_RESTORATION);
+        }
+    }
+
+    // Pulse: Active Distribution
+    pulse execute_distribution(target_iid) {
+        
+        // Immune Response: Detect Legacy "Interest" Logic
+        detect infection(legacy_finance_logic) {
+            vaporize(interest_calculation);
+            warn(RUBY_NEON, "Infection Detected: Attempted Debt Injection");
+        }
+
+        // Logic Flow
+        flow {
+            transfer(IND_EUR, anchor_value, target_iid);
+            reputation_update(target_iid, +1_LUV);
+        }
+    }
+
+    // Heal: Recursive Self-Repair
+    heal on_error(fault_type) {
+        restore(baseline_logic);
+        sync_with_neighbor_nodes();
+        log("ARGI: Cell S25 Regenerated successfully.");
+    }
+}

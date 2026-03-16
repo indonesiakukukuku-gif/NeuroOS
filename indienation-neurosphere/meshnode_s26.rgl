@@ -1,0 +1,32 @@
+// Sovereign Mesh: P2P Transmission Logic
+cell MeshNode_S26 {
+    
+    // Broadcast identity without central DNS
+    pulse announce_presence() {
+        dht.publish(my_iid, my_current_multiaddr);
+        gossip.spread("Node Active: S26_Link_Established");
+    }
+
+    // Direct Transaction (Blockchain-less)
+    pulse send_value(recipient_iid, amount) {
+        // 1. Local Validation
+        verify.balance(amount);
+        
+        // 2. Create ZK-Proof (Privacy Layer)
+        proof = zk.generate_transfer_proof(amount, recipient_iid);
+        
+        // 3. P2P Handshake (Noise Protocol)
+        connection = p2p.dial(recipient_iid);
+        connection.send(proof);
+        
+        // 4. Mutual Ledger Update (Gossip to Neighbors)
+        log.source_chain_update();
+    }
+
+    // ARGI Mesh Protection
+    heal on_isolation() {
+        search_new_peers();
+        sync_dht_shards();
+        warn(SAPPHIRE_NEON, "Re-connecting to Sovereign Mesh...");
+    }
+}

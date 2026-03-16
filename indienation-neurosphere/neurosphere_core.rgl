@@ -1,0 +1,191 @@
+// ==================================================
+// NEUROSPHERE CORE RUNTIME
+// Unified RGL Prototype
+// Sectors: S12, S21, S25, S26
+// Protocols: ValueExchange 3x11, SoftLaunch
+// Vault: NeuroVault Core
+// ==================================================
+
+//////////////////////////////////////////////////
+// SECTOR 12 — SOCIAL HUB
+//////////////////////////////////////////////////
+
+cell SocialHub_S12 {
+
+    pulse broadcast_kindness(message) {
+
+        network.mesh.broadcast(message);
+        log "SocialHub: Kindness signal distributed.";
+
+    }
+
+    pulse receive_signal(input) {
+
+        store.community_memory(input);
+        log "SocialHub: Signal received.";
+
+    }
+
+}
+
+//////////////////////////////////////////////////
+// SECTOR 21 — EVOLUTION CORE
+//////////////////////////////////////////////////
+
+cell EvolutionCore_S21 {
+    pulse search_opportunity()
+    pulse self_optimize()
+}
+
+    }
+
+    heal self_optimize() {
+
+        optimize.compiler_speed();
+        refactor.mesh_routing();
+        knowledge_base.update(last_cycle_errors);
+
+    }
+
+}
+
+//////////////////////////////////////////////////
+// SECTOR 25 — DISTRIBUTION CELL
+//////////////////////////////////////////////////
+
+cell DistributionCell_S25 {
+
+    dna anchor_value = 100000;
+    dna debt_allowance = 0;
+
+    pulse distribute_value(source, destination, amount) {
+
+        if (vault.verify_balance(source, amount)) {
+
+            execute.transfer(source, destination, amount);
+            log "Distribution: Value transferred.";
+
+        } else {
+
+            log "Distribution: insufficient balance.";
+
+        }
+
+    }
+
+}
+
+//////////////////////////////////////////////////
+// SECTOR 26 — MESH NODE
+//////////////////////////////////////////////////
+
+cell MeshNode_S26 {
+
+    pulse connect_node(node_id) {
+
+        mesh.register(node_id);
+        log "MeshNode: node connected.";
+
+    }
+
+    pulse route_packet(packet) {
+
+        mesh.route(packet);
+        log "MeshNode: packet routed.";
+
+    }
+
+}
+
+//////////////////////////////////////////////////
+// VAULT — NEUROVAULT CORE
+//////////////////////////////////////////////////
+
+vault NeuroVault_Core {
+
+    store wallet_registry;
+
+    pulse create_wallet(owner) {
+
+        id = crypto.generate_id();
+        wallet_registry.add(id, owner);
+
+        log "Vault: wallet created.";
+
+        return id;
+
+    }
+
+    pulse verify_balance(wallet, amount) {
+
+        balance = ledger.get(wallet);
+
+        if (balance >= amount) {
+            return true;
+        }
+
+        return false;
+
+    }
+
+}
+
+//////////////////////////////////////////////////
+// PROTOCOL — VALUE EXCHANGE 3x11
+//////////////////////////////////////////////////
+
+protocol ValueExchange_3x11 {
+
+    rule fairness_cycle {
+
+        distribute.community_reward();
+        reinvest.infrastructure();
+        allocate.emergency_buffer();
+
+    }
+
+}
+
+//////////////////////////////////////////////////
+// PROTOCOL — SOFTLAUNCH GATE
+//////////////////////////////////////////////////
+
+protocol SoftLaunch_Gate {
+
+    state phase = "closed";
+
+    pulse open_gate() {
+
+        if (community_nodes >= 111) {
+
+            phase = "open";
+            log "SoftLaunch Gate Activated.";
+
+        }
+
+    }
+
+}
+
+//////////////////////////////////////////////////
+// BOOTSTRAP RUNTIME
+//////////////////////////////////////////////////
+
+runtime NeuroSphere {
+
+    start {
+
+        MeshNode_S26.connect_node("node_founder");
+
+        SocialHub_S12.broadcast_kindness(
+        "NeuroSphere Node Initialized");
+
+        EvolutionCore_S21.self_optimize();
+
+        SoftLaunch_Gate.open_gate();
+
+        log "NeuroSphere Core Runtime Active.";
+
+    }
+
+}
