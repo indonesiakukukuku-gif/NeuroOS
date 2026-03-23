@@ -4,7 +4,7 @@
  */
 
 const PROJECT_ID = "indienation-stable-coin";
-const BASE_URL = `https://${PROJECT_ID}-default-rtdb.firebaseio.com`;
+const BASE_URL = `https://indienation-stable-coin-default-rtdb.asia-southeast1.firebasedatabase.app`;
 
 export default async function handler(req, res) {
     const { iid } = req.query;
